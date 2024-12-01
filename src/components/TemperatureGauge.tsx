@@ -70,6 +70,7 @@ export const TemperatureGauge: React.FC<TemperatureGaugeProps> = ({
               type="number"
               domain={currentDomain}
               tickFormatter={(tick) => `${tick}°C`}
+              // @ts-ignore
               ticks={currentTicks.map((tick) => tick.value)}
               tick={{ fill: "#fff", fontSize: 12 }}
               tickCount={7}
@@ -115,6 +116,7 @@ export const TemperatureGauge: React.FC<TemperatureGaugeProps> = ({
               type="number"
               domain={feelsLikeDomain}
               tickFormatter={(tick) => `${tick}°C`}
+              // @ts-ignore
               ticks={feelsLikeTicks.map((tick) => tick.value)}
               tick={{ fill: "#fff", fontSize: 12 }}
               tickCount={7}
