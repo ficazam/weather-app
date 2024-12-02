@@ -35,7 +35,7 @@ export const CitySearcher = () => {
 
   return (
     <motion.div
-      className="w-full max-w-md text-center justify-center items-center"
+      className="w-[75%] w-full max-w-md text-center justify-center items-center"
       initial={{
         opacity: 0,
       }}

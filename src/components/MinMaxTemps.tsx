@@ -23,7 +23,7 @@ export const TemperatureComparison: React.FC<TemperatureComparisonProps> = ({ mi
 
   return (
     <div className="w-full max-w-md mx-auto my-8">
-      <h3 className="text-white text-xl mb-4">Temperature Comparison</h3>
+      <h2 className="text-center text-xl font-semibold">Temperature Gauge</h2>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data} barGap={20} barCategoryGap={100}>
           <CartesianGrid strokeDasharray="3 3" />
