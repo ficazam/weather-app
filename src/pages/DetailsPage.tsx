@@ -30,8 +30,8 @@ export const DetailsPage = () => {
 
       <section className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-[65%] sm:w-full max-w-4xl">
         <WeatherCard title="Temperature">
-          <p>Current: {(weather?.main.temp! - 273.15).toFixed(2)}°C</p>
-          <p>Feels Like: {(weather?.main.feels_like! - 273.15).toFixed(2)}°C</p>
+          <p id="current-temp">Current: {(weather?.main.temp! - 273.15).toFixed(2)}°C</p>
+          <p id="feels-like-temp">Feels Like: {(weather?.main.feels_like! - 273.15).toFixed(2)}°C</p>
           <p>
             Min: {(weather?.main.temp_min! - 273.15).toFixed(2)}°C | Max:{" "}
             {(weather?.main.temp_max! - 273.15).toFixed(2)}°C
