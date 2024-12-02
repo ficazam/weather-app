@@ -14,7 +14,7 @@ export const DetailsHeader = ({ weather }: { weather: weatherItem | null }) => {
         alt={weather?.weather[0].description}
         className="mx-auto mt-4"
       />
-      <h2 className="text-2xl font-medium mt-2">{weather?.weather[0].main}</h2>
+      <h2 className="text-2xl font-medium mt-2" id="current-weather">{weather?.weather[0].main}</h2>
       <p className="text-gray-300">{weather?.weather[0].description}</p>
     </header>
   );
