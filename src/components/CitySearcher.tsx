@@ -47,12 +47,14 @@ export const CitySearcher = () => {
       }}
     >
       <TextInput
+        id="CityInput"
         value={inputValue}
         onChange={handleChange}
         error={error}
         placeholder="Enter a city and country name: Panama City, Panama"
       />
       <Button
+        id="ButtonElement"
         onClick={handleSubmit}
         disabled={inputValue.length === 0 || loading}
         label="Search Weather"
